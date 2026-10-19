@@ -83,7 +83,11 @@ Estos rangos proceden de la tabla estimativa del documento de la asignatura; no 
 
 ## Capturas de referencia
 
-Las capturas de escritorio y móvil del portafolio publicado se adjuntan en el PDF de documentación. Los proyectos también tienen vistas previas integradas en sus tarjetas.
+Capturas reales de la versión publicada en GitHub Pages. Los proyectos también tienen vistas previas integradas en sus tarjetas.
+
+![Portada del portafolio en modo oscuro](captura-portafolio.png)
+
+![Proyectos filtrados en modo claro](captura-portafolio-claro.png)
 
 ## Licencia
 
