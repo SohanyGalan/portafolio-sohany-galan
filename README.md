@@ -4,7 +4,7 @@
 **GitHub Pages:** https://sohanygalan.github.io/portafolio-sohany-galan/  
 **Vercel:** https://portafolio-sohany-galan.vercel.app/
 
-Portafolio estático responsive de Sohany Galán García (matrícula `24-sisn-8-004`), estudiante de Ingeniería de Sistemas y Computación. Presenta su experiencia en desarrollo web, diseño visual y coordinación de contenido, además de sus intereses en UX/UI, QA y gestión de proyectos. Incluye su foto de portada, cuatro capturas de sitios publicados, muestras visuales de SG Custom Works, Hard Devs y ASSB SolutionsTech, un prototipo web de Kodigo Nub en Figma, una vista del sistema de ventas La Reserva con datos ocultos y tres certificados ampliables. Las imágenes están incorporadas dentro de `index.html`, junto con el fondo Matrix, la alternancia dark/light, nueve proyectos filtrables (3 Web, 3 App y 3 Diseño), tres videos responsivos y nueve tarjetas adicionales comentadas. El formulario abre `mailto:` mientras se configura EmailJS; esto **no equivale a un envío automático confirmado**.
+Portafolio estático responsive de Sohany Galán García (matrícula `24-sisn-8-004`), estudiante de Ingeniería de Sistemas y Computación. Presenta su experiencia en desarrollo web, diseño visual y coordinación de contenido, además de sus intereses en UX/UI, QA y gestión de proyectos. Incluye su foto de portada, cuatro capturas de sitios publicados, muestras visuales de SG Custom Works, Hard Devs y ASSB SolutionsTech, un prototipo web de Kodigo Nub en Figma, una vista del sistema de ventas La Reserva con datos ocultos y tres certificados ampliables. Las imágenes están incorporadas dentro de `index.html`, junto con el fondo Matrix, la alternancia dark/light, nueve proyectos filtrables (3 Web, 3 App y 3 Diseño), tres videos responsivos y nueve tarjetas adicionales comentadas. El formulario envía mensajes directamente mediante EmailJS.
 
 La información profesional procede del CV facilitado por Sohany. Ella confirmó su participación integral en el diseño y desarrollo de Andreina Taveras, Gap Móviles y Catálogo La Reserva; Listado La Reserva, el sistema de ventas y el diseño de Kodigo Nub se añadieron por petición suya. Las nueve tarjetas muestran trabajos concretos; el prototipo de Figma se presenta como diseño, no como sitio publicado.
 
@@ -50,9 +50,9 @@ El prototipo Kodigo Nub aparece en el filtro **Web** para completar los tres cas
 3. En **Settings > Pages** se seleccionó **Deploy from a branch**, rama `main` y carpeta `/ (root)`.
 4. Se comprobó la URL pública de GitHub Pages indicada arriba (HTTP 200 y contenido correcto).
 
-## Activar el formulario
+## Formulario de contacto
 
-Sin configuración de EmailJS, el formulario abre la aplicación de correo del visitante con el mensaje preparado; el visitante debe enviarlo allí. Para envío directo desde la página, crea una cuenta/proyecto en [EmailJS](https://www.emailjs.com/), configura un servicio y una plantilla, y reemplaza los tres valores vacíos de `emailConfig` al final de `index.html` con el public key, service ID y template ID. Después prueba un envío real. No incluyas contraseñas ni claves privadas en el código público.
+El formulario usa [EmailJS](https://www.emailjs.com/) con el servicio Gmail **Portafolio Sohany** y la plantilla **Contacto portafolio Sohany**. Los campos `name`, `email`, `phone` y `message` se envían mediante `emailjs.sendForm`. El 18 de octubre de 2026 se realizó un envío de prueba desde la URL pública de GitHub Pages: la página mostró **«Mensaje enviado correctamente»** y el historial de EmailJS registró el resultado **OK**. El código solo contiene identificadores y la clave pública de EmailJS; no incluye contraseñas ni claves privadas. Para mantenerlo operativo, la propietaria debe conservar activos el servicio de Gmail y la cuenta de EmailJS.
 
 ## Comparación: GitHub Pages vs Vercel
 
@@ -88,6 +88,8 @@ Capturas reales de la versión publicada en GitHub Pages. Los proyectos también
 ![Portada del portafolio en modo oscuro](captura-portafolio.png)
 
 ![Proyectos filtrados en modo claro](captura-portafolio-claro.png)
+
+![Confirmación del envío de prueba con EmailJS](captura-formulario-emailjs.png)
 
 ## Licencia
 
